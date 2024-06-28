@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, aqua, lightblue, lightgreen, #ffffff);
+
+}
+
+h1{
+    font-family: Helvetica;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+input{
+    width: 400px;
+    display: block;
+    height: 30px;
+    text-align: center;
+    /* border: none;   */
+}
+ legend{
+    /*background-color: aqua; */
+    color: brown;
+    border: none; 
+    border-radius: 5px;
+}
+
+#container{
+    width: 620px;
+    height: 550px;
+    row-gap: 2rem;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    background: linear-gradient(45deg, rgb(148, 196, 134), rgb(48, 228, 252), rgb(247, 231, 231), #ffffff);
+}
+label{
+    font-size: 2rem;
+
+}
+fieldset:first-child{
+    margin-bottom: 1rem;
+}
+fieldset{
+    font-size: 1.1rem;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.8);
+    width: 500px;
+
+}
+#scoresSet{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+#result-message{
+    height: 200px;
+    /* background-color: white; */
+}
+#showResults{
+    height: 150px;
+    border: none;
+    font-size: 1.8rem;
+    text-align: center;
+    display: block;
+}
+
+button{
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: rgb(252, 244, 244);
+    background-color: blueviolet;
+    /* width: 10px; */
+}
+#getMessageButton{
+    margin-left: 1rem;
+}
+#scoresSet, #result-message, #show-results{
+    border: none;
+}
+
+input::placeholder {
+    font-size: 15px;
+    font-weight: normal;
+}
+#resetButton{
+    /* padding: 1rem; */
+    width: 150px;
+    margin-left: 1rem;
+}
+
+@media screen and(max-width:320px) {
+    #container{
+        h1{
+            font-size: 1rem;
+        }
+        #container{
+            max-width: 320px;
+        }
+        fieldset{
+            max-width: 320px;
+        }
+        input{
+            max-width: 320px;
+        }
+        label{
+            font-size: 1rem;
+        }
+        button{
+            padding: 0px;
+        }
+        input::placeholder{
+            font-size: 10px;
+        }
+    }
+}
+@media screen and(max-width:650px) {
+    #container{
+        max-width: 620px;
+    }
+}
+@media screen and(max-width:1080px) {
+    #container{
+        max-width: 620px;
+    }
+}

@@ -1,0 +1,112 @@
+body {
+    background-color: #0a0a23;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow: hidden;
+    /* box-sizing: border-box; */
+  } 
+  
+  #game-container {
+    width: 800px;
+    max-height: 550px;
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 0 auto;
+    padding: 10px;
+    /* box-sizing: border-box; */
+    border-radius: 20px;
+  }
+  
+  #text-container {
+    max-width: 600px;
+    display: flex;
+    background-color: #0a0a23;
+    color: #ffffff;
+    padding: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 180px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    font-size: 1.4rem;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    box-shadow: 8px 20px 4px rgba(0, 0, 0, 0.8);
+    /* box-sizing: border-box; */
+  }
+  
+  
+  #control-buttons {
+    max-width: 800px;
+    border: none;
+    padding: 1rem;
+    gap: 1px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+
+  button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    width: 140px;
+    font-size: 1rem;
+  } 
+
+  #stats {
+    border: none;
+    border-radius: 12px;
+    padding: 5px;
+    color: #0a0a23;
+    height: 100px;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+     background: linear-gradient(
+      45deg,
+      #6735bd 20%,
+      rgb(187, 40, 40) 100%
+    ); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    /* box-sizing: border-box; */
+  }
+  
+  #monsterStats {
+    display: none;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 1.3rem;
+    color: #ffffff;
+    background-color: #c70d0d;
+  }
+  
+  .stat {
+    padding-right: 10px;
+  }
+  
+  button {
+    cursor: pointer;
+    color: #0a0a23;
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid #feac32;
+  }
+
+  h1 {
+    color: white;
+    display: block;
+    /* margin-top: 10rem; */
+    left: 50%;
+    margin: 200px 30px 10px 30%;
+    font-size: 3rem;
+  }

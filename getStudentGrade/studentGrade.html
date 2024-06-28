@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Student Grade</title>
+    <link rel="stylesheet" href="studentGrade.css">
+</head>
+<body>
+    <h1>Calculate student Grades</h1>
+    <div id="container">
+        <fieldset id="scoresSet">
+            <legend>Input Student Scores</legend>
+            <label for="scoresInput">Enter student scores</label>
+            <input type="numbers" id="scoresInput"placeholder="Enter all students grades here seperating with commas" required>
+        </fieldset>
+
+        <fieldset id="result-message">
+            <legend>Showing Student results</legend>
+            <div id="showResults">Read results here</div>
+        </fieldset>
+
+       <div class="button">
+            <button id="getAverageButton">Calculate Average</button>
+            <button id="getMessageButton">Show student msg</button>
+            <button id="resetButton" value="reset"> Reset</button>
+       </div>
+    </div>
+    <script src="./studentGrade.js"></script>
+</body>
+</html>
